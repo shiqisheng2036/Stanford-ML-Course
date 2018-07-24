@@ -13,6 +13,10 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
+hTheta = X * theta;
+error = (hTheta - y) .^2;
+% m is the number of the training set
+J = (1 / (2 * m) ) * sum(error);
 
 
 
